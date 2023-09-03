@@ -321,3 +321,13 @@ picture source img {
   }
  
 }
+
+.shoping {
+
+}
+
+.shoping__list {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
