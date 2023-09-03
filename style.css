@@ -171,11 +171,7 @@ h6 {
   }
 }
 
-@media (max-width: 860px) {
-  .header__right {
-    padding-right: 0px;
-  }
-}
+
 
 .animation {
   width: 100%;
@@ -233,6 +229,8 @@ picture source img {
   .animation__details {
     display: flex;
   }
+
+  
 }
 
 .animation__details--button1 {
@@ -269,20 +267,57 @@ picture source img {
 
 .symbols {
   width: 100%;
-  height: 80px;
+  height: auto;
   /* background: pink; */
   display: flex;
   justify-content: center;
   padding-top: 30px;
   padding-right: 20px;
+  margin-top: 118px;
+  background-color: red;
 }
 
 .symbols a {
-  padding: 0 18px;
+  margin: 0 17px;
 }
 
-.symbols .circle {
+.symbols__circle {
   display: flex;
-  padding-top: 4px;
-  padding-right: 19px;
+  padding: 0 20px;
+  justify-content: center;
+}
+
+.symbols__circle a .circle {
+  display: flex;
+  flex-direction: row;
+  margin: 0 px;
+  margin-top: 4px;
+  margin-right: 16px;
+}
+
+.symbols__circle .circle {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.symbols__circle a #empty-circle {
+  background: white;
+  border: 2px solid black;
+}
+
+.symbols__circle a #filled-circle {
+  background: black;
+}
+
+@media (max-width: 860px) {
+  .header__right {
+    padding-right: 0px;
+  }
+
+  .symbols {
+    margin-top: 600px;
+  }
+ 
 }
